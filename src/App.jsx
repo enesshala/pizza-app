@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>{data}</h1>
+      <h1 className="text-red-400">{data}</h1>
     </div>
   );
 }
