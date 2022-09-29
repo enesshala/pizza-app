@@ -17,7 +17,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="text-red-400">{data}</h1>
+      <h1 className="text-red-400 text-3xl shadow-lg w-96 p-3 rounded-lg mt-10 ml-10">
+        {data}
+      </h1>
     </div>
   );
 }
