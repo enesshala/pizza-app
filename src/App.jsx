@@ -1,27 +1,19 @@
-import "./App.css";
-import { useState, useEffect } from "react";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Main from "./pages/main";
+import SignIn from "./pages/sign-in";
 
-// functions
-import { getTest } from "./functions/test";
-
-function App() {
-  const [data, setData] = useState("Hello worlddddd");
-
-  useEffect(() => {
-    getTest()
-      .then((res) => {
-        setData(res.message);
-      })
-      .catch((err) => console.log(err));
-  }, []);
-
+const App = () => {
   return (
-    <div className="App">
-      <h1 className="text-red-400 text-3xl shadow-lg w-96 p-3 rounded-lg mt-10 ml-10">
-        {data}
-      </h1>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/sign-in" element={<SignIn />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;
