@@ -1,11 +1,22 @@
 import React from "react";
+import Card from "./cards/Card";
+import Cart from "./cart/Cart";
 
 const index = () => {
   return (
-    <div>
-      <h1 className="text-2xl text-purple-800">
-        Welcome to Home Page of PICA APP
-      </h1>
+    <div className="flex justify-between">
+      <div className="flex flex-wrap justify-evenly gap-6 p-5 w-full">
+        <Card title="Margherita" price="5" />
+        <Card title="Margherita" price="5" />
+        <Card title="Margherita" price="5" />
+        <Card title="Margherita" price="5" />
+        <Card title="Margherita" price="5" />
+        <Card title="Margherita" price="5" />
+        <Card title="Margherita" price="5" />
+        <Card title="Margherita" price="5" />
+        <Card title="Margherita" price="5" />
+      </div>
+      <Cart />
     </div>
   );
 };
