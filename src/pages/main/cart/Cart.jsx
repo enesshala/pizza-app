@@ -9,6 +9,7 @@ const Cart = () => {
       <Order title="The Baconatorizor" piece="1" price="5" />
       <Order title="Buffalo Chicken" piece="1" price="3" />
       <Order title="Veggie Delight" piece="1" price="2" />
+      <Order title="Erlira" piece="1" price="100000000000" />
     </div>
   );
 };
