@@ -10,12 +10,6 @@ const Cart = ({ cart, setCart, addCart, decrementCart }) => {
     setCart(cart.filter((product) => product !== itemToRemove));
   };
 
-  // const setQuantity = (product, amount) => {
-  //   const newCart = [...cart];
-  //   newCart.find((item) => item.name === product.name).quantity = amount;
-  //   setCart(newCart);
-  // };
-
   return (
     <div
       className={`w-96 h-100 bg-neutral-900 p-4 sm:fixed sm:w-[240px] sm:max-h-80 sm:overflow-y-scroll sm:overflow-x-hidden sm:z-0 sm:bottom-8 sm:right-4 sm:p-3 sm:rounded-2xl sm:shadow-2xl ${
